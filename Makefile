@@ -20,7 +20,7 @@ CXXFLAGS += -Wfloat-equal -Wredundant-decls -Wshadow -Wconversion -Wuninitialize
 # endif
 
 # list .h files here
-HEADERS =
+HEADERS = stockFunctions.h
 
 # list .cpp files here
 TEST_FILES = tests.cpp
