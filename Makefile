@@ -24,7 +24,7 @@ HEADERS =
 
 # list .cpp files here
 TEST_FILES = tests.cpp
-SHARED_FILES = 
+SHARED_FILES = stockFunctions.cpp
 
 .PHONY: all
 all: tests.exe
