@@ -56,9 +56,11 @@ std::vector<double> parseData(const std::string& csv) {
   while (end != std::string::npos) {
     result.push_back(std::stod(csv.substr(start , end - start)));
     start = end + 1;
-    end = csv.fin (',' , start);
+    end = csv.find (',' , start);
   }
-  
+  // Process after final comma
+  result.push_back(std::stod(csv.substr(start)));
+  return result;
 }
 
 std::vector<double> getChangeVector(const std::vector<double>& values) {
