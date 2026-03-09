@@ -72,7 +72,7 @@ std::vector<double> getChangeVector(const std::vector<double>& values) {
     return changes;
   }
   // Main Loop
-  for (size_t i =1 ; i < values.size() , i++) {
+  for  {
     changes.at(i) = values.at(i) - values.at(i-1);
   }
 
