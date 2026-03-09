@@ -9,7 +9,14 @@ double percentChange(const std::vector<double>& values , int startDay , int endD
 }
 
 double highestValue(const std::vector<double>& values , int startDay , int endDay) {
-  double maxVal
+  double maxSoFar = values.at(startDay);
+
+  for (int = startDay + 1 ; i <= endDay ; i++) {
+    if (values.at(i) > maxSoFar) {
+      maxSoFar = values.at(i);
+    }
+  }
+  return maxSoFar;
 }
 
 double average(const std::vector<double>& values , int startDay , int endDay) {
