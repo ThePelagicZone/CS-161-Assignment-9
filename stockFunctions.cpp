@@ -67,7 +67,15 @@ std::vector<double> getChangeVector(const std::vector<double>& values) {
   // Parameters
   std::vector<double> changes(values.size());
 
+  // Return Empty Vector if Input is empty
+  if (values.empty()) {
+    return changes;
+  }
   // Main Loop
+  for (size_t i =1 ; i < values.size() , i++) {
+    changes.at(i) = values.at(i) - values.at(i-1);
+  }
+  
 }
 
 double maxDrawdown(const std::vector<double>& values , int startDay , int endDay) {
