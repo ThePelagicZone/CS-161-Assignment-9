@@ -11,7 +11,7 @@ double percentChange(const std::vector<double>& values , int startDay , int endD
 double highestValue(const std::vector<double>& values , int startDay , int endDay) {
   double maxSoFar = values.at(startDay);
 
-  for (int = startDay + 1 ; i <= endDay ; i++) {
+  for (int i = startDay + 1 ; i <= endDay ; i++) {
     if (values.at(i) > maxSoFar) {
       maxSoFar = values.at(i);
     }
