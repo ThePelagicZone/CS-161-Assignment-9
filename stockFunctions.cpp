@@ -23,6 +23,7 @@ double average(const std::vector<double>& values , int startDay , int endDay) {
   // Parameters
   double sum = 0;
 
+  // Main Loop
   int count = endDay - startDay + 1;
   for (int i = startDay ; i <= endDay ; i++) {
     sum += values.at(i);
@@ -32,7 +33,14 @@ double average(const std::vector<double>& values , int startDay , int endDay) {
 }
 
 double standardDev(const std::vector<double>& values , int startDay , int endDay) {
-  return 0.0;
+  // Parameters
+  double avg = average(values , startDay , endDay);
+  double sumSquareDiff = 0;
+
+  //Main Loop
+  for (int i = startDay ; i <= endDay ; i++) {
+    sumSquareDiff += std::pow(values.at(i) - avg , 2);
+  }
 }
 
 std::vector<double> parseData(const std::string& csv) {
