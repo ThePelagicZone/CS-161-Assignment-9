@@ -46,7 +46,19 @@ double standardDev(const std::vector<double>& values , int startDay , int endDay
 }
 
 std::vector<double> parseData(const std::string& csv) {
-  return std::vector<double>();
+  // Parameters
+  std::vector<double> result;
+
+  size_t start = 0;
+  size_t end = csv.find(',');
+
+  // Main Loop
+  while (end != std::string::npos) {
+    result.push_back(std::stod(csv.substr(start , end - start)));
+    start = end + 1;
+    end = csv.fin (',' , start);
+  }
+  
 }
 
 std::vector<double> getChangeVector(const std::vector<double>& values) {
