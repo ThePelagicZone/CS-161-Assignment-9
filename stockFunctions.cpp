@@ -23,7 +23,8 @@ double average(const std::vector<double>& values , int startDay , int endDay) {
   // Parameters
   double sum = 0;
 
-  
+  int count = endDay - startDay + 1;
+  for (int )
 }
 
 double standardDev(const std::vector<double>& values , int startDay , int endDay) {
