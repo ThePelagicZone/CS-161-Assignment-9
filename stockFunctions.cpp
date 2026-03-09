@@ -9,7 +9,7 @@ double percentChange(const std::vector<double>& values , int startDay , int endD
 }
 
 double highestValue(const std::vector<double>& values , int startDay , int endDay) {
-  
+  double maxVal
 }
 
 double average(const std::vector<double>& values , int startDay , int endDay) {
