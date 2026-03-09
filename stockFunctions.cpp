@@ -1,6 +1,8 @@
 #include "stockFunctions.h"
 #include <vector>
 #include <string>
+#include <cmath>
+#
 
 double percentChange(const std::vector<double>& values , int startDay , int endDay) {
   return 0.0;
