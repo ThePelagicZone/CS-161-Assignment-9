@@ -79,5 +79,7 @@ std::vector<double> getChangeVector(const std::vector<double>& values) {
 }
 
 double maxDrawdown(const std::vector<double>& values , int startDay , int endDay) {
+  // Parameters
+  double minDiff = 0;
   
 }
